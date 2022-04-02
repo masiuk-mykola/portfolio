@@ -363,7 +363,7 @@ text-align: center;
 }
 
 .home__social{
-  bottom: 15rem;
+  bottom: 5rem;
   left: 0;
   display: grid;
   row-gap: .5rem;
@@ -396,7 +396,7 @@ transition: .4s;
 .home__scroll{
   color: var(--first-color);
   right: -1.5rem;
-  bottom: 4rem;
+  bottom: 6rem;
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
@@ -1018,7 +1018,7 @@ transition: .4s;
 
 /* For large devices */ 
 @media screen and (min-width: 992px) {
-  .conteiner{
+  .container{
     margin-left: auto;
     margin-right: auto;
   }
@@ -1049,11 +1049,18 @@ transition: .4s;
     font-size: 1.25rem;
   }
 
+  .home__social{
+    bottom: 15rem;
+    }
+
   .home__social::after{
-    transform: rotate(90deg); 
-    translate: (16px 0);
+    transform: rotate(90deg) translate(16px, 0);
   }
   
+  .home__scroll{
+    bottom: 16rem;
+    }
+
   .home__scroll-icon{
     font-size: 2rem;
   }
@@ -1137,5 +1144,3 @@ transition: .4s;
 }
 
 
-/* 1. масштаб всіх дівів
-2. кнопки соцмереж */
